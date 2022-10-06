@@ -47,4 +47,4 @@ for x in mycursor:
 print(f"The distance between 2 airports is", f"{distance.distance(listDeg[0], listDeg[1]).km:.2f} km")
 """
 
-1234
+§122345
