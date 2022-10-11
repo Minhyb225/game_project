@@ -57,8 +57,8 @@ else:
         print(tabulate(reTurn, tablefmt="fancy_grid"))
 print(f"Player_1 went a total of {sum(listc1):.2f}km to find Snorkmaiden")
 print(f"Player_2 went a total of {sum(listc2):.2f}km to find Snorkmaiden")
-if sum(listc1) > sum(listc2):
+if sum(listc1) < sum(listc2):
     print("Layer_1 is Moomin\nLayer_2 is the loser" )
-elif sum(listc1) < sum(listc2):
+elif sum(listc1) > sum(listc2):
     print("Layer_1 is the loser\nLayer_2 is Moomin" )
 #
