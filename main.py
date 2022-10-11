@@ -26,35 +26,30 @@ def Cal(icao_1,icao_2):
     for x in mycursor:
         listDeg.append(x)
     return distance.distance(listDeg[0], listDeg[1]).km
-rand = random.randint(2,4)
-rand1 = rand
-rand2 = rand
-print(f"You have to transit {rand-1} point")
-A = "EFHK"
+
+print("You have to transit in 3 airports")
 listc1 = []
 listc2 = []
-if rand1 > 1:
-    A = "EFHK"
-    for x in range(1, rand1):
-        B = input("Player_1:Choose next airport: ")
-        listc1.append(Cal(A,B))
-        A = B
-else:
-    listc1.append(Cal(B,"EFIV"))
-    mycursor.execute(f"select name from airport where ident = EFIV;")
-    reTurn = mycursor.fetchall()
-    print(tabulate(reTurn, tablefmt="fancy_grid"))
-if rand2 > 1:
-    A = "EFHK"
-    for x in range(1, rand2):
-        B = input("Player_2:Choose next airport: ")
-        listc2.append(Cal(A,B))
-        A = B
-else:
-        listc2.append(Cal(B,"EFIV"))
-        mycursor.execute(f"select name from airport where ident = EFIV;")
-        reTurn = mycursor.fetchall()
-        print(tabulate(reTurn, tablefmt="fancy_grid"))
+#1
+A = "EFHK"
+for x in range(1, 4):
+    B = input("Player_1:Choose next airport: ")
+    listc1.append(Cal(A,B))
+    A = B
+listc1.append(Cal(B,"EFIV"))
+mycursor.execute(f"select name from airport where ident = 'EFIV';")
+reTurn = mycursor.fetchall()
+
+#2
+A = "EFHK"
+for x in range(1, 4):
+    B = input("Player_2:Choose next airport: ")
+    listc2.append(Cal(A,B))
+    A = B
+listc2.append(Cal(B,"EFIV"))
+mycursor.execute(f"select name from airport where ident = 'EFIV';")
+reTurn = mycursor.fetchall()
+
 print(f"Player_1 went a total of {sum(listc1):.2f}km to find Snorkmaiden")
 print(f"Player_2 went a total of {sum(listc2):.2f}km to find Snorkmaiden")
 if sum(listc1) < sum(listc2):
