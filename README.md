@@ -82,7 +82,7 @@ else:
     print("Player 1 lost the game.\nPlayer 2 is Moomin!")
 ```
 ----
-### est results
+### Test results
 ```python 
 EFHK  :  [('Helsinki Vantaa Airport',)]
 -------------------------------
