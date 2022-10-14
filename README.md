@@ -82,6 +82,143 @@ else:
     print("Player 1 lost the game.\nPlayer 2 is Moomin!")
 ```
 ----
+### est results
+```python 
+EFHK  :  [('Helsinki Vantaa Airport',)]
+-------------------------------
+EFHA  :  [('Halli Airport',)]
+-------------------------------
+EFJY  :  [('Jyväskylä Airport',)]
+-------------------------------
+EFJO  :  [('Joensuu Airport',)]
+-------------------------------
+EFKU  :  [('Kuopio Airport',)]
+-------------------------------
+EFKK  :  [('Kokkola-Pietarsaari Airport',)]
+-------------------------------
+EFKI  :  [('Kajaani Airport',)]
+-------------------------------
+EFKS  :  [('Kuusamo Airport',)]
+-------------------------------
+EFKT  :  [('Kittilä Airport',)]
+-------------------------------
+EFKE  :  [('Kemi-Tornio Airport',)]
+-------------------------------
+EFMA  :  [('Mariehamn Airport',)]
+-------------------------------
+EFOU  :  [('Oulu Airport',)]
+-------------------------------
+EFPO  :  [('Pori Airport',)]
+-------------------------------
+EFRO  :  [('Rovaniemi Airport',)]
+-------------------------------
+EFSA  :  [('Savonlinna Airport',)]
+-------------------------------
+EFTU  :  [('Turku Airport',)]
+-------------------------------
+EFTP  :  [('Tampere-Pirkkala Airport',)]
+-------------------------------
+EFUT  :  [('Utti Air Base',)]
+-------------------------------
+EFVA  :  [('Vaasa Airport',)]
+-------------------------------
+EFIV  :  [('Ivalo Airport',)]
+-------------------------------
+You have to transit in 3 airports.
+Hi, Player 1! Choose airport to transfer. Please type in ICAO of the airport: efet
+You travelled from
+╒═════════════════════════╕
+│ Helsinki Vantaa Airport │
+╘═════════════════════════╛ 
+to
+╒═══════════════════╕
+│ Enontekio Airport │
+╘═══════════════════╛
+Hi, Player 1! Choose airport to transfer. Please type in ICAO of the airport: efha
+You travelled from
+╒═══════════════════╕
+│ Enontekio Airport │
+╘═══════════════════╛ 
+to
+╒═══════════════╕
+│ Halli Airport │
+╘═══════════════╛
+Hi, Player 1! Choose airport to transfer. Please type in ICAO of the airport: efou
+You travelled from
+╒═══════════════╕
+│ Halli Airport │
+╘═══════════════╛ 
+to
+╒══════════════╕
+│ Oulu Airport │
+╘══════════════╛
+All the airports you travelled:
+╒═════════════════════════╕
+│ Helsinki Vantaa Airport │
+╘═════════════════════════╛
+╒═══════════════════╕
+│ Enontekio Airport │
+╘═══════════════════╛
+╒═══════════════╕
+│ Halli Airport │
+╘═══════════════╛
+╒══════════════╕
+│ Oulu Airport │
+╘══════════════╛
+╒═══════════════╕
+│ Ivalo Airport │
+╘═══════════════╛
+Player 2:Choose next airport: efha
+You travelled from
+╒═════════════════════════╕
+│ Helsinki Vantaa Airport │
+╘═════════════════════════╛ 
+to
+╒═══════════════╕
+│ Halli Airport │
+╘═══════════════╛
+Player 2:Choose next airport: efou
+You travelled from
+╒═══════════════╕
+│ Halli Airport │
+╘═══════════════╛ 
+to
+╒══════════════╕
+│ Oulu Airport │
+╘══════════════╛
+Player 2:Choose next airport: efma
+You travelled from
+╒══════════════╕
+│ Oulu Airport │
+╘══════════════╛ 
+to
+╒═══════════════════╕
+│ Mariehamn Airport │
+╘═══════════════════╛
+All the airports you travelled:
+╒═════════════════════════╕
+│ Helsinki Vantaa Airport │
+╘═════════════════════════╛
+╒═══════════════╕
+│ Halli Airport │
+╘═══════════════╛
+╒══════════════╕
+│ Oulu Airport │
+╘══════════════╛
+╒═══════════════════╕
+│ Mariehamn Airport │
+╘═══════════════════╛
+╒═══════════════╕
+│ Ivalo Airport │
+╘═══════════════╛
+Player_1 went a total of 2391.80km to find Snorkmaiden
+Player_2 went a total of 2131.40km to find Snorkmaiden
+Player 1 lost the game.
+Player 2 is Moomin!
+
+Process finished with exit code 0
+
+```
 ### Preliminary Requirements
     -Players type ICAO to choose the next airport
     -Airport will be fetched and showed on the screen based on ICAO of country
